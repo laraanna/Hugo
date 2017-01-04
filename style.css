@@ -1,3 +1,39 @@
+* {
+  font-family: "Futura"; }
 
+.container-fluid {
+  padding-top: 150px;
+  padding-left: 50px;
+  padding-right: 50px; }
+
+nav ul {
+  display: inline;
+  list-style-type: none; }
+nav li {
+  float: left;
+  padding: 20px; }
+nav li:last-child {
+  float: right; }
+
+.portrait {
+  background-image: url("images/Fanny.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  visibility: hidden;
+  width: 230px;
+  height: 300px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 999; }
+
+.navbar:hover + .portrait {
+  visibility: visible; }
+
+p {
+  font-size: 55px; }
+
+.main {
+  margin-bottom: 100px; }
 
 /*# sourceMappingURL=style.css.map */
