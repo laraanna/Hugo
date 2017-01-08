@@ -40,7 +40,7 @@ h1 {
 
 span{
 	//background-color:blue;
-	background-image: url("images/stroke.png");
+	background-image: url("images/stroke.jpg");
 	color: grey;
 	&:hover {
 		color:white;
@@ -48,7 +48,7 @@ span{
 }
 
 
-#thumbnail_hover {
+#thumbnail_hover , #thumbnail_hover_2 {
 	position:absolute;
 	visibility:hidden;
 	

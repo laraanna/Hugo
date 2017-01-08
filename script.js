@@ -8,6 +8,15 @@ $( document ).ready(function() {
   		
 	});
 
+	$(".work").mousemove(function(e){
+    	$('#thumbnail_hover_2').css("visibility","visible");
+  		$('#thumbnail_hover_2').css({'top': e.clientY - 20, 'left': e.clientX - 20});
+	});
+	$(".work").mouseleave(function(e){
+    	$('#thumbnail_hover_2').css("visibility","hidden");
+  		
+	});
+
 
 	//$(".project_header").click(function(){
     //	$('.project_content').toggle();
