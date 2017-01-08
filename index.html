@@ -3,7 +3,7 @@
   <head>
     <title>Hugo</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
@@ -16,40 +16,103 @@
 		    </ul>
 	  	</nav>
 	  </div>
+	  
 	  <!-- Reveal profile image on hover -->
 	  <div class="portrait"></div>
 	  <img id="thumbnail_hover" src="images/Fanny.jpg" style="width:150px;">
 	 
 
-
-
-		<div class="container-fluid">
-		  <div class="about main">
-		  	<p>
-					<span class="portrait"> Hugo Heinrich </span>is a multi-skilled brander who just completed his eduaction at the Amsterdam Fashion Institute. He lived and worked in New York, remaining part of <span> District Vision </span>, an eyewear brand that combines atheticism and mental wellbeing. 
-				</p>
-					
+		<!-- Page One -->
+		<section id="page1">
+			<div class="container-fluid">
+		  	<div class="about main">
+		  		<h1>
+						<span class="portrait"> Hugo Heinrich </span>is a multi-skilled brander who just completed his eduaction at the Amsterdam Fashion Institute. He lived and worked in New York, remaining part of <span> District Vision </span>, an eyewear brand that combines atheticism and mental wellbeing. 
+					</h1>
+				</div>
 		  </div>
+		 </section>
 
-		  <div class="vision main">
-			  <p>
+		<!-- Page Two -->
+		<section id="page2">
+			<div class="container-fluid">
+		  	<div class="vision main">
+			  	<h1>
 						Inspired by the <span> new </span> and the <span> now </span> he crafts images and creative strategies touching on design, art direction, brand content and digital, always remaining his holistic yet playful approach.
-				</p>
+					</h1>
+		  	</div>
 		  </div>
+		</section>
 
-		  <div class="projects main">
-		  	<p> I feel like </p>
+		<!-- Page Three -->
+		<section id="page3">
+			<div class="container-fluid">
+		  	<div class="projects main">
+		  		<h1> I feel like </h1>
 		  	
-		  	<div class="project" data-title="meditation">
-		  		<div class="project_header">
-		  			<div class=project_title>Meditation in Motion</div>
-		  			<div class=project_cat>DV</div>
-		  			<div class="project_divider">|</div>
+		  		<div class="project meditation" data-title="meditation">
+		  			<div class="project_header">
+		  				<div class=project_title id="myBtn">Meditation in Motion</div>  <!-- Trigger/Open The Modal -->
+		  				<div class=project_cat>DV</div>
+		  				<div class="project_divider">|</div>
+		  			</div>
 		  		</div>
-		  		<div class="project_content"></div>
+	
+
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+
+	  <!-- Modal content -->
+	  <div class="modal-content">
+	  
+	  		
+	  		<div class="slideshow-container">
+	  		<span class="close">&times;</span>
+	  		
+					<div style="width:400px; float:right;  margin-top:150px; margin-right:50px;">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non bibendum ex, sit amet consequat nisi. Suspendisse nec lacus vel ex condimentum volutpat. Maecenas in arcu tristique, sodales eros nec, pulvinar diam. Quisque pretium ut dolor eu vestibulum. Morbi ullamcorper risus eget sem aliquam rhoncus. Duis dapibus ornare fringilla. Ut tempor elit at leo venenatis cursus. Cras rhoncus, nunc eget vehicula tincidunt, metus felis molestie urna, et vehicula dolor urna in justo.
+						</p>
+						
+					</div>
+					<div class="mySlides">
+        		<img src="images/D1.jpg" style="width:400px;">
+      		</div>
+
+      		<div class="mySlides">
+        		<img src="images/D2.jpg" style="width:400px;">
+      		</div>
+
+      		<div class="mySlides">
+        		<img src="images/D3.jpg" style="width:400px;">
+      		</div>
+					
+					<a class="prev" onclick="plusSlides(-1)">❮</a>
+					<a class="next" onclick="plusSlides(1)">❯</a>
+
+				
+					
+
+				</div>
+				
+				<div>
+  				<span class="dot" onclick="currentSlide(1)"></span> 
+  				<span class="dot" onclick="currentSlide(2)"></span> 
+  				<span class="dot" onclick="currentSlide(3)"></span> 
+  			</div>
+  			
+		</div>
+
+		
+
+	</div>
+
+		  		<div class="project_content" style="display: none" >lallala
+		  			<img  src="images/Fanny.jpg" style="width:150px;">
+		  		</div>
 		  		
 
-		  	</div>
+		  	
 
 		  	<div class="project" data-title="meditation">
 		  		<div class="project_header">
@@ -57,7 +120,7 @@
 		  			<div class=project_cat>DV</div>
 		  			<div class="project_divider">|</div>
 		  		</div>
-		  		<div class="project_content"></div>
+		  		<div class="project_content" style="display: none"></div>
 		  		
 
 		  	</div>
@@ -68,7 +131,7 @@
 		  			<div class=project_cat>AMFI</div>
 		  			<div class="project_divider">|</div>
 		  		</div>
-		  		<div class="project_content"></div>
+		  		<div class="project_content" style="display: none"></div>
 		  	
 
 		  	</div>
@@ -80,7 +143,7 @@
 		  			<div class=project_cat>DV</div>
 		  			<div class="project_divider">|</div>
 		  		</div>
-		  		<div class="project_content"></div>
+		  		<div class="project_content" style="display: none"></div>
 		  	
 
 		  	</div>
@@ -92,7 +155,7 @@
 		  			<div class=project_cat>Tommy Hilfiger</div>
 		  			<div class="project_divider">|</div>
 		  		</div>
-		  		<div class="project_content"></div>
+		  		<div class="project_content" style="display: none"></div>
 		  	
 
 		  	</div>
@@ -104,7 +167,7 @@
 		  			<div class=project_cat>DP</div>
 		  			<div class="project_divider">|</div>
 		  		</div>
-		  		<div class="project_content"></div>
+		  		<div class="project_content" style="display: none"></div>
 		  	
 
 		  	</div>
@@ -115,6 +178,7 @@
 				-->
 		  </div>
 		</div>
+		</section>
  	<script src="script.js"></script> 
   </body>
 </html>
