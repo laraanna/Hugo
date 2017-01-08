@@ -48,9 +48,12 @@ span{
 }
 
 
+
+
 #thumbnail_hover , #thumbnail_hover_2 {
-	position:absolute;
+	position:fixed;
 	visibility:hidden;
+	z-index:1;
 	
 }
 
@@ -84,6 +87,7 @@ span{
 }
 .project_title {
 	float:left;
+	cursor: url("images/arrow.png"), help; 
 }
 .project_cat {
 	float:left;
@@ -160,6 +164,7 @@ span{
     float: right;
     font-size: 28px;
     font-weight: bold;
+    
 
 }
 
@@ -167,7 +172,7 @@ span{
 .close:focus {
     color: #000;
     text-decoration: none;
-    cursor: pointer;
+    cursor: url("images/arrow.png"), help; 
 }
 
 
