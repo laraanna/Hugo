@@ -18,10 +18,9 @@
 	  </div>
 	  
 	  <!-- Reveal profile image on hover -->
-	  <!-- <div class="portrait"></div> -->
 	  <img id="thumbnail_hover" src="images/Fanny.jpg" style="width:150px;">
-	  <!-- <div class="work"></div> -->
 	  <img id="thumbnail_hover_2" src="images/D1.jpg" style="width:150px;">
+
 	 
 
 		<!-- Page One -->
@@ -59,134 +58,93 @@
 		  	
 		  		<div class="project meditation" data-title="meditation">
 		  			<div class="project_header">
-		  				<div class="project_title work" id="myBtn">Meditation in Motion</div>
-
-		  				  <!-- Trigger/Open The Modal -->
+		  				<!-- Open The Modal -->
+		  				<div class="project_title work" id="openMeditation">Meditation in Motion</div>
 		  				<div class="project_cat">DV</div>
 		  				<div class="project_divider">|</div>
 		  			</div>
 		  		</div>
-	
+						<!-- The Modal -->
+						<div id="modalMeditation" class="modal">
+					 		<div class="modal-content">
+	  						<div class="slideshow-container">
+	  							<span class="close closeMeditation">&times;</span>
+		  							<div style="width:400px; float:right;  margin-top:150px; margin-right:50px;">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non bibendum ex, sit amet consequat nisi. Suspendisse nec lacus vel ex condimentum volutpat. Maecenas in arcu tristique, sodales eros nec, pulvinar diam. Quisque pretium ut dolor eu vestibulum. Morbi ullamcorper risus eget sem aliquam rhoncus. Duis dapibus ornare fringilla. Ut tempor elit at leo venenatis cursus. Cras rhoncus, nunc eget vehicula tincidunt, metus felis molestie urna, et vehicula dolor urna in justo.
+											</p>
+										</div>
+									<div class="mySlides">
+	        					<img src="images/D1.jpg" style="width:400px;">
+	      					</div>
 
-	<!-- The Modal -->
-	<div id="myModal" class="modal">
+	    						<div class="mySlides">
+	        					<img src="images/D2.jpg" style="width:400px;">
+	      					</div>
 
-	  <!-- Modal content -->
-	  <div class="modal-content">
-	  
-	  		
-	  		<div class="slideshow-container">
-	  		<span class="close">&times;</span>
-	  		
-					<div style="width:400px; float:right;  margin-top:150px; margin-right:50px;">
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non bibendum ex, sit amet consequat nisi. Suspendisse nec lacus vel ex condimentum volutpat. Maecenas in arcu tristique, sodales eros nec, pulvinar diam. Quisque pretium ut dolor eu vestibulum. Morbi ullamcorper risus eget sem aliquam rhoncus. Duis dapibus ornare fringilla. Ut tempor elit at leo venenatis cursus. Cras rhoncus, nunc eget vehicula tincidunt, metus felis molestie urna, et vehicula dolor urna in justo.
-						</p>
+	      					<div class="mySlides">
+	        					<img src="images/D3.jpg" style="width:400px;">
+	      					</div>
+						
+									<a class="prev" onclick="plusSlides(-1)">❮</a>
+									<a class="next" onclick="plusSlides(1)">❯</a>
+								</div>
+								
+								<div>
+  								<span class="dot" onclick="currentSlide(1)"></span> 
+  								<span class="dot" onclick="currentSlide(2)"></span> 
+  								<span class="dot" onclick="currentSlide(3)"></span> 
+  							</div>
+  						</div>
+						</div>
 
-					</div>
-					<div class="mySlides">
-        		<img src="images/D1.jpg" style="width:400px;">
-      		</div>
+		  		<div class="project Nagata" data-title="Nagata">
+		  			<div class="project_header">
+		  			<!-- Open The Modal -->
+		  				<div class="project_title" id="openNagata">Nagata Packaging</div>
+		  				<div class="project_cat">DV</div>
+		  				<div class="project_divider">|</div>
+		  			</div>
+		  		</div>
+		  		
+		  		<div class="project Stubble" data-title="Stubble">
+		  			<div class="project_header">
+		  			<!-- Open The Modal -->
+		  				<div class="project_title" id="openStubble">Stubble for D&AD New Blood</div>
+		  				<div class="project_cat">AMFI</div>
+		  				<div class="project_divider">|</div>
+		  			</div>
+		  		</div>
 
-      		<div class="mySlides">
-        		<img src="images/D2.jpg" style="width:400px;">
-      		</div>
-
-      		<div class="mySlides">
-        		<img src="images/D3.jpg" style="width:400px;">
-      		</div>
-					
-					<a class="prev" onclick="plusSlides(-1)">❮</a>
-					<a class="next" onclick="plusSlides(1)">❯</a>
-
-				
-					
+		  		<div class="project Dover" data-title="doverStreet">
+		  			<div class="project_header">
+		  			<!-- Open The Modal -->
+		  				<div class="project_title" id="openDover"> Dover Street Market NY</div>
+		  				<div class="project_cat">DV</div>
+		  				<div class="project_divider">|</div>
+		  			</div>
+		  		</div>
+		  	
+		  		<div class="project Tommy" data-title="tommy">
+		  			<div class="project_header">
+		  			<!-- Open The Modal -->
+		  				<div class="project_title" id="openTommy">Tommy Denim</div>
+		  				<div class="project_cat">Tommy Hilfiger</div>
+		  				<div class="project_divider">|</div>
+		  			</div>
+		  		</div>
+		  	
+		  		<div class="project Simon" data-title="Miller">
+		  			<div class="project_header">
+		  			<!-- Open The Modal -->
+		  				<div class="project_title" id="openSimon">Simon Miller</div>
+		  				<div class="project_cat">DP</div>
+		  				<div class="project_divider">|</div>
+		  			</div>
+		  		</div>
 
 				</div>
-				
-				<div>
-  				<span class="dot" onclick="currentSlide(1)"></span> 
-  				<span class="dot" onclick="currentSlide(2)"></span> 
-  				<span class="dot" onclick="currentSlide(3)"></span> 
-  			</div>
-  			
-		</div>
-
-		
-
-	</div>
-
-		  		<div class="project_content" style="display: none" >lallala
-		  			<img  src="images/Fanny.jpg" style="width:150px;">
-		  		</div>
-		  		
-
-		  	
-
-		  	<div class="project" data-title="meditation">
-		  		<div class="project_header">
-		  			<div class=project_title>Nagata Packaging</div>
-		  			<div class=project_cat>DV</div>
-		  			<div class="project_divider">|</div>
-		  		</div>
-		  		<div class="project_content" style="display: none"></div>
-		  		
-
-		  	</div>
-
-		  	<div class="project" data-title="meditation">
-		  		<div class="project_header">
-		  			<div class=project_title>Stubble for D&AD New Blood</div>
-		  			<div class=project_cat>AMFI</div>
-		  			<div class="project_divider">|</div>
-		  		</div>
-		  		<div class="project_content" style="display: none"></div>
-		  	
-
-		  	</div>
-
-
-		  	<div class="project" data-title="meditation">
-		  		<div class="project_header">
-		  			<div class=project_title> Dover Street Market NY</div>
-		  			<div class=project_cat>DV</div>
-		  			<div class="project_divider">|</div>
-		  		</div>
-		  		<div class="project_content" style="display: none"></div>
-		  	
-
-		  	</div>
-
-
-		  	<div class="project" data-title="meditation">
-		  		<div class="project_header">
-		  			<div class=project_title>Tommy Denim</div>
-		  			<div class=project_cat>Tommy Hilfiger</div>
-		  			<div class="project_divider">|</div>
-		  		</div>
-		  		<div class="project_content" style="display: none"></div>
-		  	
-
-		  	</div>
-
-
-		  	<div class="project" data-title="meditation">
-		  		<div class="project_header">
-		  			<div class=project_title>Simon Miller</div>
-		  			<div class=project_cat>DP</div>
-		  			<div class="project_divider">|</div>
-		  		</div>
-		  		<div class="project_content" style="display: none"></div>
-		  	
-
-		  	</div>
-				<!--	
-					<p>
-					Meditation in Motion <sup> DV </sup>/ Nagata Packaging <sup>DV</sup>/ Stubble for D&AD New Blood <sup> AMFI </sup>/ Dover Street Market NY <sup>DV</sup> / Tommy Denim <sup> Tommy Hilfiger</sup>/ Simon Miller <sup>DP</sup>/ District Vision <sup>DV</sup>/byAMFI <sup>DV</sup>/ Denham the Jeanmaker <sup>MA</sup>/
-					</p>
-				-->
-		  </div>
-		</div>
+			</div>
 		</section>
  	<script src="script.js"></script> 
   </body>
