@@ -20,6 +20,12 @@ nav{
 	li {
 		float:left;
 		padding: 20px;
+		a {
+			color: $blue;
+		}
+		a:hover {
+			text-decoration: none;
+		}
 	}
 	li:last-child {
 		float:right;

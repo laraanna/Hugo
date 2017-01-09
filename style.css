@@ -11,6 +11,10 @@ nav {
   nav li {
     float: left;
     padding: 20px; }
+    nav li a {
+      color: #3f7b92; }
+    nav li a:hover {
+      text-decoration: none; }
   nav li:last-child {
     float: right;
     visibility: visible; }
