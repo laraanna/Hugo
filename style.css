@@ -11,13 +11,20 @@ nav {
     float: left;
     padding: 20px; }
   nav li:last-child {
-    float: right; }
+    float: right;
+    visibility: visible; }
+  nav #insta {
+    width: 50px;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    visibility: hidden; }
 
 a {
   cursor: url("images/arrow.png"), help; }
 
 section {
-  padding: 150px 50px; }
+  padding: 140px 50px; }
   section h1 {
     font-size: 55px;
     line-height: 140%; }
@@ -89,7 +96,9 @@ section {
     border-style: none;
     background-clip: border-box; }
     .modal .modal-content .close {
-      margin-top: 400px;
+      position: fixed;
+      top: 600px;
+      right: 200px;
       color: red;
       float: right;
       font-size: 28px;
@@ -161,6 +170,18 @@ section {
 .mySlides {
   display: none; }
 
+.tommy-container div {
+  width: 400px;
+  float: right;
+  margin-top: 150px;
+  margin-right: 0px;
+  padding: 20px; }
+.tommy-container img {
+  width: 370px;
+  -webkit-transform: rotate(-7deg);
+  transform: rotate(-7deg);
+  margin-left: 130px; }
+
 .w30 {
   width: 300px; }
 
@@ -175,65 +196,62 @@ section {
     padding: 130px 50px; }
     section h1 {
       font-size: 45px; }
+      section h1 .stroke {
+        background-size: 400px; }
 
-  .projects {
-    float: left;
-    clear: none;
-    text-align: inherit;
-    width: 100%;
-    margin-left: 0%;
-    margin-right: 0%; }
-    .projects .project {
-      display: inline-block;
+  .projects .project {
+    font-size: 40px; }
+    .projects .project .project_header .project_divider {
       float: left;
-      font-size: 40px;
-      background-color: transparent; }
-      .projects .project .project_header {
-        float: left; }
-        .projects .project .project_header .project_divider {
-          float: left;
-          font-size: 50px;
-          padding-left: 2px;
-          padding-right: 2px; }
-        .projects .project .project_header .project_title {
-          float: left;
-          cursor: url("images/arrow.png"), help;
-          font-size: 40px; }
-        .projects .project .project_header .project_cat {
-          float: left;
-          font-size: 30px; } }
+      font-size: 50px;
+      padding-left: 2px;
+      padding-right: 2px; }
+    .projects .project .project_header .project_title {
+      cursor: url("images/arrow.png"), help;
+      font-size: 40px; }
+    .projects .project .project_header .project_cat {
+      font-size: 30px; }
+
+  .tommy-container div {
+    width: 300px;
+    margin-top: 110px;
+    margin-right: 0px; }
+  .tommy-container img {
+    width: 300px;
+    margin-left: 150px; } }
+@media (max-width: 992px) {
+  .tommy-container div {
+    width: 100%;
+    margin: auto;
+    padding: 30px; }
+  .tommy-container img {
+    width: 300px;
+    margin-left: 150px; }
+
+  .modal .modal-content .close {
+    position: fixed;
+    bottom: 0px;
+    right: 100px; } }
 @media (max-width: 768px) {
   section {
     padding: 120px 50px; }
     section h1 {
-      font-size: 40px; }
+      font-size: 35px;
+      line-height: 130%; }
+      section h1 .stroke {
+        background-size: 300px; }
 
-  .projects {
-    float: left;
-    clear: none;
-    text-align: inherit;
-    width: 100%;
-    margin-left: 0%;
-    margin-right: 0%; }
-    .projects .project {
-      display: inline-block;
-      float: left;
-      font-size: 50px;
-      background-color: transparent; }
-      .projects .project .project_header {
-        float: left; }
-        .projects .project .project_header .project_divider {
-          float: left;
-          font-size: 40px;
-          padding-left: 2px;
-          padding-right: 2px; }
-        .projects .project .project_header .project_title {
-          float: left;
-          cursor: url("images/arrow.png"), help;
-          font-size: 30px; }
-        .projects .project .project_header .project_cat {
-          float: left;
-          font-size: 20px; }
+  .projects .project {
+    font-size: 40px; }
+    .projects .project .project_header .project_divider {
+      font-size: 40px;
+      padding-left: 2px;
+      padding-right: 2px; }
+    .projects .project .project_header .project_title {
+      cursor: url("images/arrow.png"), help;
+      font-size: 25px; }
+    .projects .project .project_header .project_cat {
+      font-size: 20px; }
 
   .w30 {
     width: 220px; }
@@ -242,40 +260,54 @@ section {
     width: 190px; }
 
   .w45 {
-    width: 380px; } }
+    width: 380px; }
+
+  nav li:last-child {
+    visibility: hidden; }
+  nav #insta {
+    visibility: visible; }
+
+  .tommy-container div {
+    width: 100%;
+    margin: auto;
+    padding: 30px; }
+  .tommy-container img {
+    width: 255px;
+    margin: 80px; }
+
+  .modal .modal-content .close {
+    position: fixed;
+    bottom: 0px;
+    right: 50px; } }
 @media (max-width: 480px) {
   section {
-    padding: 130px 50px; }
+    padding: 150px 50px; }
     section h1 {
       font-size: 25px;
-      line-height: 130%; }
+      line-height: 140%; }
+      section h1 .stroke {
+        background-size: 225px; }
 
-  .projects {
-    float: left;
-    clear: none;
-    text-align: inherit;
+  .projects .project .project_header .project_divider {
+    font-size: 30px;
+    padding-left: 2px;
+    padding-right: 2px; }
+  .projects .project .project_header .project_title {
+    cursor: url("images/arrow.png"), help;
+    font-size: 20px; }
+  .projects .project .project_header .project_cat {
+    font-size: 10px; }
+  .projects .tommy-container div {
     width: 100%;
-    margin-left: 0%;
-    margin-right: 0%; }
-    .projects .project {
-      display: inline-block;
-      float: left;
-      font-size: 50px;
-      background-color: transparent; }
-      .projects .project .project_header {
-        float: left; }
-        .projects .project .project_header .project_divider {
-          float: left;
-          font-size: 30px;
-          padding-left: 2px;
-          padding-right: 2px; }
-        .projects .project .project_header .project_title {
-          float: left;
-          cursor: url("images/arrow.png"), help;
-          font-size: 20px; }
-        .projects .project .project_header .project_cat {
-          float: left;
-          font-size: 10px; }
+    margin: auto;
+    padding: 30px; }
+  .projects .tommy-container img {
+    width: 230px;
+    margin: auto; }
+  .projects .modal .modal-content .close {
+    position: fixed;
+    bottom: 0px;
+    right: 50px; }
 
   .w30 {
     width: 200px; }

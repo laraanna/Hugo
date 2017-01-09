@@ -2,6 +2,8 @@ $blue: #3f7b92;
 $darkgrey: #333;
 $arrow: url("images/arrow.png"), help;
 
+
+
 * {
 	font-family: "Futura";
 	color: $darkgrey;
@@ -22,9 +24,18 @@ nav{
 	}
 	li:last-child {
 		float:right;
+		visibility: visible;
 	}
-	
+	#insta {
+		width:50px;
+		position:fixed;
+		top:5px;
+		right:5px;
+		visibility: hidden;
+	}	
 }
+
+
 
 a {
 	cursor: $arrow 
@@ -32,7 +43,7 @@ a {
 }
 //page styling 
 section {
-	padding: 150px 50px;
+	padding: 140px 50px;
 	h1 {
 		font-size:55px;
 		line-height: 140%;
@@ -126,7 +137,9 @@ section {
 	    border-style:none;
 	    background-clip:border-box;
 		.close { // The Close Button 
-		    margin-top:400px;
+		    position:fixed;
+		    top:600px;
+		    right:200px;
 		    color: red;
 		    float: right;
 		    font-size: 28px;
@@ -211,6 +224,23 @@ section {
 
 .mySlides { display:none;}
 
+.tommy-container{
+	div {
+		width: 400px;
+		float: right;
+		margin-top: 150px;
+		margin-right: 0px;
+		padding:20px;
+	}
+	img {
+			width:370px;
+			-webkit-transform: rotate(-7deg);
+			transform: rotate(-7deg);
+			margin-left: 130px;
+		}
+}
+
+
 .w30 { width:300px;}
 .w25 {width:250px;}
 .w45 {width:450px;}
@@ -220,22 +250,15 @@ section {
 	padding: 130px 50px;
 	h1 {
 		font-size:45px;
+		.stroke{
+			background-size: 400px;
+		}
 	}
 	}
 	.projects {
-		float: left;
-	    clear: none;
-	    text-align: inherit;
-	    width: 100%;
-	    margin-left: 0%;
-	    margin-right: 0%;
 	    .project {
-			display:inline-block;
-			float:left;
 			font-size:40px;
-			background-color:transparent;
 			.project_header {
-				float:left;
 				.project_divider {
 					float:left;
 					font-size:50px;
@@ -243,21 +266,49 @@ section {
 					padding-right:2px;
 				}
 				.project_title {
-					float:left;
 					cursor: $arrow;
 					font-size:40px;
 				}
 				.project_cat {
-					float:left;
 					font-size:30px;
 				}
 			}
 		}   
 	}
+	.tommy-container{
+	div {
+		width: 300px;
+		margin-top: 110px;
+		margin-right: 0px;
+	}
+	img {
+			width:300px;
+			margin-left: 150px;
+		}
+}
 
-	//.w30 { width:250px;}
-	//.w25 {width:200px;}
-	//.w45 {width:400px;}
+}
+@media (max-width: 992px) {
+	.tommy-container{
+	div {
+		width: 100%;
+		margin:auto;
+		padding:30px;
+	}
+	img {
+			width:300px;
+			margin-left: 150px;
+		}
+	}
+	.modal {
+		.modal-content { 
+			.close { 
+			position:fixed;
+			bottom:0px;
+			right:100px;
+			}
+		}
+	}
 
 }
 
@@ -266,37 +317,27 @@ section {
 	section {
 	padding: 120px 50px;
 	h1 {
-		font-size:40px;
-		//line-height: 130%;
+		font-size:35px;
+		line-height: 130%;
+		.stroke{
+			background-size: 300px;
+		}
 	}
 	}
-	.projects {
-		float: left;
-	    clear: none;
-	    text-align: inherit;
-	    width: 100%;
-	    margin-left: 0%;
-	    margin-right: 0%;
+	.projects {	
 	    .project {
-			display:inline-block;
-			float:left;
-			font-size:50px;
-			background-color:transparent;
+			font-size:40px;
 			.project_header {
-				float:left;
 				.project_divider {
-					float:left;
 					font-size:40px;
 					padding-left:2px;
 					padding-right:2px;
 				}
-				.project_title {
-					float:left;
+				.project_title {	
 					cursor: $arrow;
-					font-size:30px;
+					font-size:25px;
 				}
-				.project_cat {
-					float:left;
+				.project_cat {	
 					font-size:20px;
 				}
 			}
@@ -306,47 +347,90 @@ section {
 	.w30 { width:220px;}
 	.w25 {width:190px;}
 	.w45 {width:380px;}
+
+	nav{
+		li:last-child {
+			visibility: hidden;
+		}
+		#insta {
+			visibility: visible;
+		}	
+	}
+
+	.tommy-container{
+	div {
+		width: 100%;
+		margin:auto;
+		padding:30px;
+	}
+	img {
+			width:255px;
+			margin: 80px;
+		}
+	}
+	.modal {
+		.modal-content { 
+			.close { 
+			position:fixed;
+			bottom:0px;
+			right:50px;
+			}
+		}
+	}
+
 }
+
 
 @media (max-width: 480px) {
 	section {
-	padding: 130px 50px;
+	padding: 150px 50px;
 	h1 {
 		font-size:25px;
-		line-height: 130%;
+		line-height: 140%;
+		.stroke{
+			background-size: 225px;
+		}
 	}
 	}
 	.projects {
-		float: left;
-	    clear: none;
-	    text-align: inherit;
-	    width: 100%;
-	    margin-left: 0%;
-	    margin-right: 0%;
 	    .project {
-			display:inline-block;
-			float:left;
-			font-size:50px;
-			background-color:transparent;
+			//font-size:50px;
 			.project_header {
-				float:left;
 				.project_divider {
-					float:left;
 					font-size:30px;
 					padding-left:2px;
 					padding-right:2px;
 				}
 				.project_title {
-					float:left;
 					cursor: $arrow;
 					font-size:20px;
 				}
 				.project_cat {
-					float:left;
 					font-size:10px;
 				}
 			}
-		}   
+		} 
+		.tommy-container{
+	div {
+		width: 100%;
+		margin:auto;
+		padding:30px;
+	}
+	img {
+			width:230px;
+			margin: auto;
+		}
+	}
+	.modal {
+		.modal-content { 
+			.close { 
+			position:fixed;
+			bottom:0px;
+			right:50px;
+			}
+		}
+	}
+  
 	}
 
 	.w30 { width:200px;}
