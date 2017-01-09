@@ -2,6 +2,7 @@
   font-family: "Futura";
   color: #333; }
 
+/* navigation bar styling */
 nav {
   height: 50px; }
   nav ul {
@@ -23,6 +24,7 @@ nav {
 a {
   cursor: url("images/arrow.png"), help; }
 
+/* Page Styling */
 section {
   padding: 140px 50px; }
   section h1 {
@@ -45,6 +47,7 @@ section {
   height: 100vh;
   width: 100%; }
 
+/* Thumbnail visibility on class */
 #thumbnail_code, #thumbnail_hover, #thumbnail_hover_1, #thumbnail_hover_2, #thumbnail_hover_3, #thumbnail_hover_4, #thumbnail_hover_5, #thumbnail_hover_6 {
   position: fixed;
   visibility: hidden;
@@ -76,6 +79,7 @@ section {
         float: left;
         font-size: 20px; }
 
+/* The Modal */
 .modal {
   display: none;
   position: fixed;
@@ -84,7 +88,6 @@ section {
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
   background-color: white; }
   .modal .modal-content {
     background-color: white;
@@ -110,6 +113,7 @@ section {
         cursor: url("images/arrow.png"), help; }
 
 #backarrow {
+  /* Styling of the return button from Modal */
   width: 30px;
   -moz-transform: scaleX(-1);
   -o-transform: scaleX(-1);
@@ -119,6 +123,7 @@ section {
   -ms-filter: "FlipH"; }
 
 .dot {
+  /* dots in image slider */
   cursor: pointer;
   height: 13px;
   width: 13px;
@@ -144,13 +149,17 @@ section {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0; }
 
-/* Position the "next button" to the right */
 .next {
   left: 360px;
   border-radius: 3px 0 0 3px; }
 
 .slideshow-container {
   position: relative; }
+  .slideshow-container #text {
+    width: 400px;
+    float: right;
+    margin-top: 150px;
+    margin-right: 50px; }
   .slideshow-container .prev, .slideshow-container .next {
     cursor: pointer;
     position: absolute;
@@ -166,6 +175,8 @@ section {
   .slideshow-container .next {
     left: 360px;
     border-radius: 3px 0 0 3px; }
+  .slideshow-container .mySlides img {
+    width: 400px; }
 
 .mySlides {
   display: none; }
@@ -181,16 +192,14 @@ section {
   -webkit-transform: rotate(-7deg);
   transform: rotate(-7deg);
   margin-left: 130px; }
-
-.w30 {
+.tommy-container .w30 {
   width: 300px; }
-
-.w25 {
+.tommy-container .w25 {
   width: 250px; }
-
-.w45 {
+.tommy-container .w45 {
   width: 450px; }
 
+/* responsive design*/
 @media (max-width: 1200px) {
   section {
     padding: 130px 50px; }
@@ -218,7 +227,20 @@ section {
     margin-right: 0px; }
   .tommy-container img {
     width: 300px;
-    margin-left: 150px; } }
+    margin-left: 150px; }
+
+  .slideshow-container #text {
+    width: 100%;
+    margin-top: 0px;
+    margin-right: 0px;
+    padding: 20px; }
+  .slideshow-container .next {
+    left: 510px; }
+  .slideshow-container .prev {
+    left: 150px; }
+  .slideshow-container .mySlides img {
+    margin-left: 150px;
+    margin-right: 150px; } }
 @media (max-width: 992px) {
   .tommy-container div {
     width: 100%;
@@ -231,25 +253,38 @@ section {
   .modal .modal-content .close {
     position: fixed;
     bottom: 0px;
-    right: 100px; } }
+    right: 100px; }
+
+  .slideshow-container #text {
+    width: 100%;
+    margin-top: 0px;
+    margin-right: 0px;
+    padding: 20px; }
+  .slideshow-container .next {
+    left: 460px; }
+  .slideshow-container .prev {
+    left: 100px; }
+  .slideshow-container .mySlides img {
+    margin-left: 100px;
+    margin-right: 100px; } }
 @media (max-width: 768px) {
   section {
     padding: 120px 50px; }
     section h1 {
       font-size: 35px;
-      line-height: 130%; }
+      line-height: 150%; }
       section h1 .stroke {
         background-size: 300px; }
 
   .projects .project {
     font-size: 40px; }
     .projects .project .project_header .project_divider {
-      font-size: 40px;
+      font-size: 35px;
       padding-left: 2px;
       padding-right: 2px; }
     .projects .project .project_header .project_title {
       cursor: url("images/arrow.png"), help;
-      font-size: 25px; }
+      font-size: 35px; }
     .projects .project .project_header .project_cat {
       font-size: 20px; }
 
@@ -278,7 +313,23 @@ section {
   .modal .modal-content .close {
     position: fixed;
     bottom: 0px;
-    right: 50px; } }
+    right: 50px; }
+
+  .slideshow-container #text {
+    width: 100%;
+    margin-top: 0px;
+    margin-right: 0px;
+    padding: 20px; }
+  .slideshow-container .next {
+    left: 210px;
+    top: 520px; }
+  .slideshow-container .prev {
+    left: 0px;
+    top: 520px; }
+  .slideshow-container .mySlides img {
+    width: 250px;
+    margin-left: 0px;
+    margin-right: 50px; } }
 @media (max-width: 480px) {
   section {
     padding: 150px 50px; }
@@ -316,6 +367,22 @@ section {
     width: 170px; }
 
   .w45 {
-    width: 300px; } }
+    width: 300px; }
+
+  .slideshow-container #text {
+    width: 100%;
+    margin-top: 0px;
+    margin-right: 0px;
+    padding: 20px; }
+  .slideshow-container .next {
+    left: 160px;
+    top: 550px; }
+  .slideshow-container .prev {
+    left: 0px;
+    top: 550px; }
+  .slideshow-container .mySlides img {
+    width: 200px;
+    margin-left: 0px;
+    margin-right: 50px; } }
 
 /*# sourceMappingURL=style.css.map */

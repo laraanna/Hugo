@@ -9,9 +9,8 @@ $arrow: url("images/arrow.png"), help;
 	color: $darkgrey;
 }
 
-//navigation bar styling 
+/* navigation bar styling */
 nav{
-	//background-color:white;
 	height:50px;
 	ul{
 	  display: inline;
@@ -41,7 +40,7 @@ a {
 	cursor: $arrow 
 
 }
-//page styling 
+/* Page Styling */
 section {
 	padding: 140px 50px;
 	h1 {
@@ -72,7 +71,7 @@ section {
 }
 
 
-//thumbnail visibility on class 
+/* Thumbnail visibility on class */
 #thumbnail_code , #thumbnail_hover , #thumbnail_hover_1 , #thumbnail_hover_2 , #thumbnail_hover_3 , #thumbnail_hover_4 , #thumbnail_hover_5 , #thumbnail_hover_6 {
 	position:fixed;
 	visibility:hidden;
@@ -89,7 +88,6 @@ section {
     margin-right: 0%;
     .project {
 		display:inline-block;
-		//border:1px solid red;
 		float:left;
 		font-size:50px;
 		background-color:transparent;
@@ -116,7 +114,7 @@ section {
 
 
 
-// The Modal (background) 
+/* The Modal */
 .modal {
     display: none; 
     position: fixed; 
@@ -125,7 +123,7 @@ section {
     top: 0;
     width: 100%; // Full width 
     height: 100%; // Full height 
-    overflow: auto; // Enable scroll if needed 
+    //overflow: auto; // Enable scroll if needed 
     background-color: white;
     .modal-content {  //Modal Content 
 	    background-color: white;
@@ -154,7 +152,7 @@ section {
 	}
 }
  
-#backarrow {
+#backarrow {			/* Styling of the return button from Modal */
         width:30px;
         -moz-transform: scaleX(-1);
         -o-transform: scaleX(-1);
@@ -164,7 +162,7 @@ section {
         -ms-filter: "FlipH";
 }
 
-.dot {
+.dot {		/* dots in image slider */
   cursor:pointer;
   height: 13px;
   width: 13px;
@@ -195,7 +193,7 @@ section {
   border-radius: 0 3px 3px 0;
 }
 
-/* Position the "next button" to the right */
+
 .next {
   left: 360px;
   border-radius: 3px 0 0 3px;
@@ -203,6 +201,12 @@ section {
 
 .slideshow-container { 
   position: relative;
+  #text {
+  	width:400px;
+  	float: right;
+  	margin-top:150px;
+  	margin-right:50px;
+  }
   .prev, .next {
 	  cursor: pointer;
 	  position: absolute;
@@ -219,10 +223,18 @@ section {
 	.next {
   		left: 360px;
   		border-radius: 3px 0 0 3px;
-	} 
+	}
+	.mySlides {
+		img {
+			width:400px;
+		}
+	}
 }
 
-.mySlides { display:none;}
+.mySlides { 
+	display:none;
+
+}
 
 .tommy-container{
 	div {
@@ -238,25 +250,27 @@ section {
 			transform: rotate(-7deg);
 			margin-left: 130px;
 		}
+
+	.w30 { width:300px;}
+	.w25 {width:250px;}
+	.w45 {width:450px;}
+
 }
 
-
-.w30 { width:300px;}
-.w25 {width:250px;}
-.w45 {width:450px;}
+/* responsive design*/
 
 @media (max-width: 1200px) {
 	section {
-	padding: 130px 50px;
-	h1 {
-		font-size:45px;
-		.stroke{
-			background-size: 400px;
+		padding: 130px 50px;
+		h1 {
+			font-size:45px;
+			.stroke{
+				background-size: 400px;
+			}
 		}
 	}
-	}
 	.projects {
-	    .project {
+		.project {
 			font-size:40px;
 			.project_header {
 				.project_divider {
@@ -276,26 +290,46 @@ section {
 		}   
 	}
 	.tommy-container{
-	div {
-		width: 300px;
-		margin-top: 110px;
-		margin-right: 0px;
-	}
-	img {
-			width:300px;
-			margin-left: 150px;
+		div {
+			width: 300px;
+			margin-top: 110px;
+			margin-right: 0px;
 		}
+		img {
+				width:300px;
+				margin-left: 150px;
+			}
+	}
+	.slideshow-container { 
+	  #text {
+	  	width:100%;
+	  	margin-top:0px;
+	  	margin-right:0px;
+	  	padding:20px;
+	  }
+		.next {
+	  	left: 510px;
+		}
+		.prev {
+	  	left: 150px;
+		}
+	  .mySlides {
+			img {
+				margin-left:150px;
+				margin-right:150px;
+			}
+		} 
+	}
 }
 
-}
 @media (max-width: 992px) {
 	.tommy-container{
-	div {
-		width: 100%;
-		margin:auto;
-		padding:30px;
-	}
-	img {
+		div {
+			width: 100%;
+			margin:auto;
+			padding:30px;
+		}
+		img {
 			width:300px;
 			margin-left: 150px;
 		}
@@ -310,6 +344,26 @@ section {
 		}
 	}
 
+	.slideshow-container { 
+	  #text {
+	  	width:100%;
+	  	margin-top:0px;
+	  	margin-right:0px;
+	  	padding:20px;
+	  }
+		.next {
+	  	left: 460px;
+		}
+		.prev {
+	  	left: 100px;
+		}
+	  .mySlides {
+			img {
+				margin-left:100px;
+				margin-right:100px;
+			}
+		} 
+	}
 }
 
 
@@ -318,7 +372,7 @@ section {
 	padding: 120px 50px;
 	h1 {
 		font-size:35px;
-		line-height: 130%;
+		line-height: 150%;
 		.stroke{
 			background-size: 300px;
 		}
@@ -329,13 +383,13 @@ section {
 			font-size:40px;
 			.project_header {
 				.project_divider {
-					font-size:40px;
+					font-size:35px;
 					padding-left:2px;
 					padding-right:2px;
 				}
 				.project_title {	
 					cursor: $arrow;
-					font-size:25px;
+					font-size:35px;
 				}
 				.project_cat {	
 					font-size:20px;
@@ -376,6 +430,30 @@ section {
 			right:50px;
 			}
 		}
+	}
+
+	.slideshow-container { 
+	  #text {
+	  	width:100%;
+	  	margin-top:0px;
+	  	margin-right:0px;
+	  	padding:20px;
+	  }
+		.next {
+	  		left: 210px;
+	  		top: 520px;
+		}
+		.prev {
+	  		left: 0px;
+	  		top: 520px;
+		}
+	  .mySlides {
+			img {
+				width:250px;
+				margin-left:0px;
+				margin-right:50px;
+			}
+		} 
 	}
 
 }
@@ -436,6 +514,30 @@ section {
 	.w30 { width:200px;}
 	.w25 {width:170px;}
 	.w45 {width:300px;}
+	
+	.slideshow-container { 
+	  #text {
+	  	width:100%;
+	  	margin-top:0px;
+	  	margin-right:0px;
+	  	padding:20px;
+	  }
+		.next {
+	  		left: 160px;
+	  		top: 550px;
+		}
+		.prev {
+	  		left: 0px;
+	  		top: 550px;
+		}
+	  .mySlides {
+			img {
+				width:200px;
+				margin-left:0px;
+				margin-right:50px;
+			}
+		} 
+	}
 }
 
 
