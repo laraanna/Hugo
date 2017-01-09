@@ -171,13 +171,78 @@ section {
   width: 450px; }
 
 @media (max-width: 1200px) {
-  section h1 {
-    font-size: 50px; } }
-@media (max-width: 768px) {
   section {
     padding: 130px 50px; }
     section h1 {
-      font-size: 40px; } }
+      font-size: 45px; }
+
+  .projects {
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%; }
+    .projects .project {
+      display: inline-block;
+      float: left;
+      font-size: 40px;
+      background-color: transparent; }
+      .projects .project .project_header {
+        float: left; }
+        .projects .project .project_header .project_divider {
+          float: left;
+          font-size: 50px;
+          padding-left: 2px;
+          padding-right: 2px; }
+        .projects .project .project_header .project_title {
+          float: left;
+          cursor: url("images/arrow.png"), help;
+          font-size: 40px; }
+        .projects .project .project_header .project_cat {
+          float: left;
+          font-size: 30px; } }
+@media (max-width: 768px) {
+  section {
+    padding: 120px 50px; }
+    section h1 {
+      font-size: 40px; }
+
+  .projects {
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%; }
+    .projects .project {
+      display: inline-block;
+      float: left;
+      font-size: 50px;
+      background-color: transparent; }
+      .projects .project .project_header {
+        float: left; }
+        .projects .project .project_header .project_divider {
+          float: left;
+          font-size: 40px;
+          padding-left: 2px;
+          padding-right: 2px; }
+        .projects .project .project_header .project_title {
+          float: left;
+          cursor: url("images/arrow.png"), help;
+          font-size: 30px; }
+        .projects .project .project_header .project_cat {
+          float: left;
+          font-size: 20px; }
+
+  .w30 {
+    width: 220px; }
+
+  .w25 {
+    width: 190px; }
+
+  .w45 {
+    width: 380px; } }
 @media (max-width: 480px) {
   section {
     padding: 130px 50px; }
@@ -201,7 +266,7 @@ section {
         float: left; }
         .projects .project .project_header .project_divider {
           float: left;
-          font-size: 20px;
+          font-size: 30px;
           padding-left: 2px;
           padding-right: 2px; }
         .projects .project .project_header .project_title {
@@ -210,6 +275,15 @@ section {
           font-size: 20px; }
         .projects .project .project_header .project_cat {
           float: left;
-          font-size: 10px; } }
+          font-size: 10px; }
+
+  .w30 {
+    width: 200px; }
+
+  .w25 {
+    width: 170px; }
+
+  .w45 {
+    width: 300px; } }
 
 /*# sourceMappingURL=style.css.map */
