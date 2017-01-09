@@ -3,14 +3,7 @@
 	color: #333;
 }
 
-
-.container-fluid {
-	padding-top: 170px;
-	padding-left: 70px;
-	padding-right: 70px;
-	
-}
-
+//navigation bar styling 
 nav{
 	ul{
 	  display: inline;
@@ -27,33 +20,35 @@ nav{
 	
 }
 
-
-
-h1 {
-	font-size:55px;
-	line-height: 130%;
-}
-
-.main {
-	margin-bottom: 200px;
-}
-
-span{
-	//background-color:blue;
-	background-image: url("images/stroke.jpg");
-	color: grey;
-	&:hover {
-		color:white;
+//page styling 
+section {
+	padding: 150px 50px;
+	h1 {
+		font-size:55px;
+		line-height: 140%;
+		.stroke{
+			background-image: url("images/stroke.png");
+			background-repeat: no-repeat;
+			background-size: 485px;
+			color: #3f7b92;
+			&:hover {
+				background-image: none;
+			}
+		}
 	}
 }
 
+#page1 , #page2 , #page3 {
+	height:100vh;
+	width:100%;		
+}
 
 
-
-#thumbnail_hover , #thumbnail_hover_2 {
+//thumbnail visibility on class 
+#thumbnail_hover , #thumbnail_hover_1 , #thumbnail_hover_2 , #thumbnail_hover_3 , #thumbnail_hover_4 , #thumbnail_hover_5 , #thumbnail_hover_6 {
 	position:fixed;
 	visibility:hidden;
-	z-index:1;
+	z-index:-1;
 	
 }
 
@@ -64,117 +59,71 @@ span{
     width: 100%;
     margin-left: 0%;
     margin-right: 0%;
-    //border: 2px solid blue;
-}
-
-.project {
-	display:inline-block;
-	//border:1px solid red;
-	float:left;
-	font-size:50px;
-}
-
-.project_header {
-	float:left;
-}
-
-.project_divider {
-	float:left;
-	font-size:50px;
-	padding-left:20px;
-	padding-right:20px;
-
-}
-.project_title {
-	float:left;
-	cursor: url("images/arrow.png"), help; 
-}
-.project_cat {
-	float:left;
-	font-size:20px;
-}
-
-.project_content {
-	
-	border:2px solid green;
-	width: 100%;
-	height: 700px;
-    //margin-left: 0%;
-    //margin-right: 0%;
-    float:left;
-    
-	
+    .project {
+		display:inline-block;
+		//border:1px solid red;
+		float:left;
+		font-size:50px;
+		background-color:transparent;
+		.project_header {
+			float:left;
+			.project_divider {
+				float:left;
+				font-size:50px;
+				padding-left:20px;
+				padding-right:20px;
+			}
+			.project_title {
+				float:left;
+				cursor: url("images/arrow.png"), help; 
+			}
+			.project_cat {
+				float:left;
+				font-size:20px;
+			}
+		}
+	}   
 }
 
 
-#page1 {
-	height:100vh;
-	width:100%;		
-}
 
 
-#page2 {
-	height:100vh;
-	width:100%;	
-}
-
-#page3 {
-	height:100vh;
-	width:100%;	
-}
-
-
-/* The Modal (background) */
+// The Modal (background) 
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 2; /* Sit on top */
+    display: none; 
+    position: fixed; 
+    z-index: 2; 
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+    width: 100%; // Full width 
+    height: 100%; // Full height 
+    overflow: auto; // Enable scroll if needed 
     background-color: white;
-    //border:2px solid pink;
-
-   
-
-   
+    .modal-content {  //Modal Content 
+	    background-color: white;
+	    padding-left: 120px;
+	    padding-right: 120px;
+	    padding-top: 100px;
+	    padding-bottom: 100px;
+	    box-shadow:none;
+	    border-style:none;
+	    background-clip:border-box;
+		.close { // The Close Button 
+		    margin-top:400px;
+		    color: red;
+		    float: right;
+		    font-size: 28px;
+		    font-weight: bold;
+		    .close:hover, 
+			.close:focus {
+			    color: #000;
+			    text-decoration: none;  
+			    cursor: url("images/arrow.png"); 
+			}
+		}   	
+	}
 }
-
-/* Modal Content */
-.modal-content {
-	
-    background-color: white;
-    //margin: auto;
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    box-shadow:none;
-    border-style:none;
-    background-clip:border-box;
-   	
-}
-
-/* The Close Button */
-.close {
-    margin-top:400px;
-    color: red;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    
-
-}
-
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: url("images/arrow.png"), help; 
-}
-
+ 
 
 .dot {
   cursor:pointer;
@@ -185,11 +134,12 @@ span{
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  .active, .dot:hover {
+  	background-color: #717171;
+	}
 }
 
-.active, .dot:hover {
-  background-color: #717171;
-}
+
 
 /* Next & previous buttons */
 .prev, .next {
@@ -212,10 +162,25 @@ span{
   border-radius: 3px 0 0 3px;
 }
 
-.slideshow-container {
-  
+.slideshow-container { 
   position: relative;
-  //margin: auto;
+  .prev, .next {
+	  cursor: pointer;
+	  position: absolute;
+	  top: 50%;
+	  width: auto;
+	  padding: 16px;
+	  margin-top: -22px;
+	  color: black;
+	  font-weight: bold;
+	  font-size: 18px;
+	  transition: 0.6s ease;
+	  border-radius: 0 3px 3px 0;
+	}
+	.next {
+  		left: 360px;
+  		border-radius: 3px 0 0 3px;
+	} 
 }
 
 .mySlides {
@@ -223,3 +188,26 @@ span{
 
 }
 
+@media (max-width: 1200px) {
+	h1{
+		font-size: 50px;
+	}
+}
+
+
+@media (max-width: 768px) {
+	h1{
+		font-size: 45px;
+		line-height: 150%;
+	}
+}
+
+@media (max-width: 480px) {
+	section {
+	padding: 0px 5px;
+	h1 {
+		font-size:25px;
+		line-height: 180%;
+	}
+}
+}
