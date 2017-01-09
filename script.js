@@ -1,4 +1,6 @@
 $( document ).ready(function() {
+	
+// Various Thumbnail effect for hover 
     $(".portrait").mousemove(function(e){
     	$('#thumbnail_hover').css("visibility","visible");
   		$('#thumbnail_hover').css({'top': e.clientY - 20, 'left': e.clientX - 20});
@@ -63,6 +65,15 @@ $( document ).ready(function() {
     	$('#thumbnail_hover_4').css("visibility","hidden");
   		
 	});
+
+	$(".code").mousemove(function(e){
+    	$('#thumbnail_code').css("visibility","visible");
+  		$('#thumbnail_code').css({'top': e.clientY - 20, 'left': e.clientX - 20});
+	});
+	$(".code").mouseleave(function(e){
+    	$('#thumbnail_code').css("visibility","hidden");
+  		
+	});
 	
 
 // Get the Meditation modal
@@ -98,6 +109,7 @@ closeTommy.onclick = function() {
 
 });
 
+// Content Image Slide for Meditation Modal 
 var slideIndex = 1;
 showSlides(slideIndex);
 
