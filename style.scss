@@ -23,7 +23,7 @@ nav{
 		a {
 			color: $blue;
 		}
-		a:hover {
+		a:hover , a:visited , a:link{
 			text-decoration: none;
 		}
 	}
@@ -44,7 +44,10 @@ nav{
 
 a {
 	cursor: $arrow 
+}
 
+a:hover , a:visited , a:link{
+			text-decoration: none;
 }
 /* Page Styling */
 section {
@@ -62,7 +65,7 @@ section {
 			}
 		a {
 			color: $blue;
-			&:hover{
+			&:hover , &:visited{
 				text-decoration: none;
 				color: $blue;
 			}	

@@ -13,7 +13,7 @@ nav {
     padding: 20px; }
     nav li a {
       color: #3f7b92; }
-    nav li a:hover {
+    nav li a:hover, nav li a:visited, nav li a:link {
       text-decoration: none; }
   nav li:last-child {
     float: right;
@@ -27,6 +27,9 @@ nav {
 
 a {
   cursor: url("images/arrow.png"), help; }
+
+a:hover, a:visited, a:link {
+  text-decoration: none; }
 
 /* Page Styling */
 section {
@@ -43,7 +46,7 @@ section {
         background-image: none; }
       section h1 .stroke a {
         color: #3f7b92; }
-        section h1 .stroke a:hover {
+        section h1 .stroke a:hover, section h1 .stroke a:visited {
           text-decoration: none;
           color: #3f7b92; }
 
